@@ -1,0 +1,6 @@
+marshmallow-sqlalchemy
+Flask             
+flask-marshmallow 
+Flask-Migrate    
+Flask-SQLAlchemy
+pymysql
