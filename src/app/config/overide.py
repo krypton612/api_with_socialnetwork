@@ -262,9 +262,10 @@ def login():
         return jsonify({"STATUS": "OK", "data": userpassword, "token": token.decode("utf-8") })
         
 
-    except:
+    except Exception as e:
+        print(e)
         response = jsonify({"message": "Contreña o usuario incorrectos"})
-        response.status_code = 404
+        response.status_code = 400
         return response
 
 def verify():

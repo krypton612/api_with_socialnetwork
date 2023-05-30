@@ -11,6 +11,7 @@ app.config[
         'SQLALCHEMY_DATABASE_URI'
         ] = "mysql+pymysql://krypton612:12345@localhost:3306/note_db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app.app_context().push()
 
 db = SQLAlchemy(app)
 ma = Marshmallow(app)
